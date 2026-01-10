@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 900px;
@@ -5,12 +9,14 @@ body {
   padding: 20px;
 }
 
+/* Page Heading */
 h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: blue;
+  color: #0056b3;
   text-align: center;
 }
 
+/* Text */
 p {
   line-height: 1.6;
 }
@@ -22,7 +28,7 @@ ul {
 
 li {
   font-size: 1rem;
-  color: brown;
+  color: #6b3f1d;
 }
 
 /* Form Styling */
@@ -36,7 +42,7 @@ form input {
   margin-bottom: 0.75rem;
 }
 
-/* CSS Grid Layout - 2x2 Grid */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -45,20 +51,22 @@ form input {
 }
 
 .grid-item {
+  display: grid;
+  place-items: center;
   background-color: #f4f4f4;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 6px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease;
 }
 
 .grid-item:hover {
-  background-color: gold;
   cursor: pointer;
 }
 
-/* Responsive: Single column on mobile */
+/* Responsive: single column on small screens */
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: 1fr;

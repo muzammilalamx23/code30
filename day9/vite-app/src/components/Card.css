@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-desc {
+  color: #555;
+}

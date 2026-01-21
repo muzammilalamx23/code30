@@ -1,6 +1,6 @@
-function UserCard({ product }) {
+function ProductCard({ product }) {
   return (
-    <div className="user-card">
+    <div className="product-card">
       <img 
       src={product.image}
       alt={product.title}

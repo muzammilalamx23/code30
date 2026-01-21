@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import UserCard from "./UserCard";
+import UserCard from "./ProductCard";
 import "./Dashboard.css";
 
 function Dashboard() {
